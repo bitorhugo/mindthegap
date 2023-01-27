@@ -1,0 +1,21 @@
+# ninja log v5
+526	584	1674775065352752018	mindthegap	e354a5c4920dd7cc
+1	31	1674777772092860546	build.ninja	ae2c368ebe14782e
+1	470	1674777495699516126	CMakeFiles/mindthegap.dir/main.cpp.o	d1a61a50204e729d
+2	325	1674766706022416821	CMakeFiles/mindthegap.dir/Parser/Parser.cpp.o	4623308c8bb1eb21
+1	342	1674777611806187462	CMakeFiles/mindthegap.dir/Helpers/StringHelpers.cpp.o	295b5fa41461732a
+1	36	1674777772092860546	build.ninja	ae2c368ebe14782e
+1	208	1674777772309527223	CMakeFiles/mindthegap.dir/Airline/Airline.cpp.o	84ff7165fd3af0c5
+208	268	1674777772369527226	mindthegap	69749ab48aa2840c
+1	344	1674777800336195014	CMakeFiles/mindthegap.dir/Helpers/StringHelpers.cpp.o	295b5fa41461732a
+344	404	1674777800392861683	mindthegap	69749ab48aa2840c
+2	547	1674777962496201516	CMakeFiles/mindthegap.dir/main.cpp.o	d1a61a50204e729d
+547	607	1674777962556201519	mindthegap	69749ab48aa2840c
+2	553	1674778246189546236	CMakeFiles/mindthegap.dir/main.cpp.o	d1a61a50204e729d
+553	615	1674778246252879572	mindthegap	69749ab48aa2840c
+2	480	1674779157156249379	CMakeFiles/mindthegap.dir/main.cpp.o	d1a61a50204e729d
+2	556	1674779168089583152	CMakeFiles/mindthegap.dir/Airline/Airline.cpp.o	84ff7165fd3af0c5
+1	554	1674779207236251386	CMakeFiles/mindthegap.dir/Airline/Airline.cpp.o	84ff7165fd3af0c5
+2	467	1674779547386265062	CMakeFiles/mindthegap.dir/main.cpp.o	d1a61a50204e729d
+2	576	1674779622469601397	CMakeFiles/mindthegap.dir/Airline/Airline.cpp.o	84ff7165fd3af0c5
+576	637	1674779622529601399	mindthegap	69749ab48aa2840c
