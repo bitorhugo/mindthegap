@@ -1,4 +1,6 @@
 #include "Airline.hpp"
+#include <iostream>
+#include <ostream>
 #include <string>
 #include <unordered_map>
 
@@ -18,11 +20,11 @@ void Airline::setCountry(std::string _country) { M_Country = _country; }
 
 std::ostream& operator<< (std::ostream& os, const Airline& obj) {
  return os << "{" << obj.M_Code << "," << obj.M_Name << "," << obj.M_Callsign
-           << "," << obj.M_Country;
+           << "," << obj.M_Country << "}";
 }
   
-std::unordered_map<std::string, Airline> Airline::deserialize(std::string data) {
-  Parser airlines_parser("../Data/airlines.csv");
+std::unordered_map<std::string, Airline> Airline::deserialize(std::string path) {
+  Parser airlines_parser(path);
   std::unordered_map<std::string, Airline> airlines;
   std::string line;
   getline(airlines_parser.getFile(), line);  //discard first line

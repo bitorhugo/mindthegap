@@ -1,7 +1,7 @@
 #include <cstdlib>
 #include <fstream>
 #include <iostream>
-#include <ostream>
+#include <future>
 #include <string>
 #include <unordered_map>
 #include <utility>
@@ -15,7 +15,7 @@
 
 int main() {
   std::string airline_path = "../Data/airlines.csv";
-  std::string airport_path = "../Data/airplanes.csv";
+  std::string airport_path = "../Data/airports.csv";
   std::string flights_path = "../Data/flights.csv";
 
   std::unordered_map<std::string, Airline> airlines = Airline::deserialize(airline_path);

@@ -35,5 +35,5 @@ public:
 
   friend std::ostream& operator<< (std::ostream& os, const Airport& obj);
 
-  static std::unordered_map<std::string, Airport> deserialize(std::string data);
+  static std::unordered_map<std::string, Airport> deserialize(std::string path);
 };

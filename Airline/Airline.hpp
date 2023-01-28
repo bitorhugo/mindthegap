@@ -9,6 +9,7 @@
 
 class Airline {
 private:
+  
   std::string M_Code;
   std::string M_Name;
   std::string M_Callsign;
@@ -30,7 +31,7 @@ public:
 
   friend std::ostream& operator<< (std::ostream& os, const Airline& obj);
 
-  static std::unordered_map<std::string, Airline> deserialize(std::string data);
+  static std::unordered_map<std::string, Airline> deserialize(std::string path);
   
 };
 
