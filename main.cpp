@@ -7,7 +7,7 @@
 #include <utility>
 #include <vector>
 #include "Airport/Airport.hpp"
-#include "Parser/Parser.hpp"
+#include "SafeInputStream/SafeInputStream.hpp"
 #include "Airline/Airline.hpp"
 #include "Helpers/StringHelpers.hpp"
 

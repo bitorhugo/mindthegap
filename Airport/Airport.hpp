@@ -2,7 +2,7 @@
 #include <ostream>
 #include <string>
 #include <unordered_map>
-#include "../Parser/Parser.hpp"
+#include "../SafeInputStream/SafeInputStream.hpp"
 #include "../Helpers/StringHelpers.hpp"
 
 class Airport {

@@ -55,11 +55,11 @@ build CMakeFiles/mindthegap.dir/main.cpp.o: CXX_COMPILER__mindthegap_Debug /home
   OBJECT_DIR = CMakeFiles/mindthegap.dir
   OBJECT_FILE_DIR = CMakeFiles/mindthegap.dir
 
-build CMakeFiles/mindthegap.dir/Parser/Parser.cpp.o: CXX_COMPILER__mindthegap_Debug /home/bitor/projects/mindthegap/Parser/Parser.cpp || cmake_object_order_depends_target_mindthegap
-  DEP_FILE = CMakeFiles/mindthegap.dir/Parser/Parser.cpp.o.d
+build CMakeFiles/mindthegap.dir/SafeInputStream/SafeInputStream.cpp.o: CXX_COMPILER__mindthegap_Debug /home/bitor/projects/mindthegap/SafeInputStream/SafeInputStream.cpp || cmake_object_order_depends_target_mindthegap
+  DEP_FILE = CMakeFiles/mindthegap.dir/SafeInputStream/SafeInputStream.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/mindthegap.dir
-  OBJECT_FILE_DIR = CMakeFiles/mindthegap.dir/Parser
+  OBJECT_FILE_DIR = CMakeFiles/mindthegap.dir/SafeInputStream
 
 build CMakeFiles/mindthegap.dir/Airline/Airline.cpp.o: CXX_COMPILER__mindthegap_Debug /home/bitor/projects/mindthegap/Airline/Airline.cpp || cmake_object_order_depends_target_mindthegap
   DEP_FILE = CMakeFiles/mindthegap.dir/Airline/Airline.cpp.o.d
@@ -87,7 +87,7 @@ build CMakeFiles/mindthegap.dir/Helpers/StringHelpers.cpp.o: CXX_COMPILER__mindt
 #############################################
 # Link the executable mindthegap
 
-build mindthegap: CXX_EXECUTABLE_LINKER__mindthegap_Debug CMakeFiles/mindthegap.dir/main.cpp.o CMakeFiles/mindthegap.dir/Parser/Parser.cpp.o CMakeFiles/mindthegap.dir/Airline/Airline.cpp.o CMakeFiles/mindthegap.dir/Airport/Airport.cpp.o CMakeFiles/mindthegap.dir/Helpers/StringHelpers.cpp.o
+build mindthegap: CXX_EXECUTABLE_LINKER__mindthegap_Debug CMakeFiles/mindthegap.dir/main.cpp.o CMakeFiles/mindthegap.dir/SafeInputStream/SafeInputStream.cpp.o CMakeFiles/mindthegap.dir/Airline/Airline.cpp.o CMakeFiles/mindthegap.dir/Airport/Airport.cpp.o CMakeFiles/mindthegap.dir/Helpers/StringHelpers.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/mindthegap.dir
   POST_BUILD = :

@@ -5,7 +5,7 @@
 #include <unordered_map>
 #include "../Helpers/StringHelpers.hpp"
 #include <unordered_map>
-#include "../Parser/Parser.hpp"
+#include "../SafeInputStream/SafeInputStream.hpp"
 
 class Airline {
 private:

@@ -115,12 +115,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Parser/Parser.cpp",
+			"path" : "SafeInputStream/SafeInputStream.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Parser/Parser.hpp",
+			"path" : "SafeInputStream/SafeInputStream.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{

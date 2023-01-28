@@ -1,11 +1,11 @@
-#include "Parser.hpp"
+#include "SafeInputStream.hpp"
 #include <cstdio>
 #include <fstream>
 #include <iostream>
 #include <iterator>
 #include <ostream>
 
-Parser::Parser(std::string filename) {
+SafeInputStream::SafeInputStream(std::string filename) {
   std::cout << "Opening File: " << filename << std::endl;
   file = std::ifstream(filename);
   if (file.fail()) {
@@ -16,11 +16,11 @@ Parser::Parser(std::string filename) {
   }
 }
 
-Parser::~Parser(){
+SafeInputStream::~SafeInputStream(){
   std::cout << "Closing file.." << std::endl;
   file.close();
 }
 
-std::ifstream& Parser::getFile() {
+std::ifstream& SafeInputStream::getFile() {
   return file;
 }

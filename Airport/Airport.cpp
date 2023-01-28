@@ -28,7 +28,7 @@ std::ostream& operator<< (std::ostream& os, const Airport& obj) {
 
 
 std::unordered_map<std::string, Airport> Airport::deserialize(std::string path) {
-  Parser airports_parser(path);
+  SafeInputStream airports_parser(path);
   std::unordered_map<std::string, Airport> airports;
   std::string line;
   getline(airports_parser.getFile(), line);  //discard first line
