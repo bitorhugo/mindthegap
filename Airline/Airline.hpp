@@ -9,10 +9,10 @@
 
 class Airline {
 private:
-  std::string code;
-  std::string name;
-  std::string callsign;
-  std::string country;
+  std::string M_Code;
+  std::string M_Name;
+  std::string M_Callsign;
+  std::string M_Country;
 
 public:
 
@@ -27,6 +27,8 @@ public:
   void setName(std::string name);
   void setCallsign(std::string callsign);
   void setCountry(std::string country);
+
+  friend std::ostream& operator<< (std::ostream& os, const Airline& obj);
 
   static std::unordered_map<std::string, Airline> deserialize(std::string data);
   

@@ -4,17 +4,22 @@
 
 Airline::Airline(std::string _code, std::string _name, std::string _callsign,
                  std::string _country)
-    : code(_code), name(_name), callsign(_callsign), country(_country) {}
+    : M_Code(_code), M_Name(_name), M_Callsign(_callsign), M_Country(_country) {}
 
-std::string Airline::getCode(){return code;}
-std::string Airline::getName(){return name;}
-std::string Airline::getCallsign(){return callsign;}
-std::string Airline::getCountry(){return country;}
+std::string Airline::getCode(){return M_Code;}
+std::string Airline::getName(){return M_Name;}
+std::string Airline::getCallsign(){return M_Callsign;}
+std::string Airline::getCountry(){return M_Country;}
 
-void Airline::setCode(std::string _code){code = _code;}
-void Airline::setName(std::string _name){name = _name;}
-void Airline::setCallsign(std::string _callsign){callsign = _callsign;}
-void Airline::setCountry(std::string _country) {country = _country;}
+void Airline::setCode(std::string _code){M_Code = _code;}
+void Airline::setName(std::string _name){M_Name = _name;}
+void Airline::setCallsign(std::string _callsign){M_Callsign = _callsign;}
+void Airline::setCountry(std::string _country) { M_Country = _country; }
+
+std::ostream& operator<< (std::ostream& os, const Airline& obj) {
+ return os << "{" << obj.M_Code << "," << obj.M_Name << "," << obj.M_Callsign
+           << "," << obj.M_Country;
+}
   
 std::unordered_map<std::string, Airline> Airline::deserialize(std::string data) {
   Parser airlines_parser("../Data/airlines.csv");

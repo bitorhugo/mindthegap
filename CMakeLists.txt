@@ -3,4 +3,4 @@ project(mindthegap)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(mindthegap main.cpp Parser/Parser.cpp Parser/Parser.hpp Airline/Airline.cpp Airline/Airline.hpp Helpers/StringHelpers.cpp Helpers/StringHelpers.hpp)
+add_executable(mindthegap main.cpp Parser/Parser.cpp Parser/Parser.hpp Airline/Airline.cpp Airline/Airline.hpp Airport/Airport.cpp Airport/Airport.hpp Helpers/StringHelpers.cpp Helpers/StringHelpers.hpp)
