@@ -21,14 +21,12 @@ int main() {
   std::string flights_path = "../Data/flights.csv";
 
   std::future<std::vector<Flight>> f = std::async(std::launch::async, Flight::deserialize, flights_path);
-
-  std::unordered_map<std::string, Airline> airlines = Airline::deserialize(airline_path);
-  std::unordered_map<std::string, Airport> airports = Airport::deserialize(airport_path);
-  std::vector<Flight> flights = Flight::deserialize(flights_path);
+  std::future<std::unordered_map<std::string, Airline>> airlines = std::async(std::launch::async, Airline::deserialize, airline_path);
+  std::future<std::unordered_map<std::string, Airport>> airports = std::async(std::launch::async, Airport::deserialize, airport_path);
 
   std::cout << "flights:" << f.get().size() << std::endl;
-  std::cout << "airlines:" << airlines.size() << std::endl;
-  std::cout << "airports:" << airports.size() << std::endl;
+  std::cout << "airlines:" << airlines.get().size() << std::endl;
+  std::cout << "airports:" << airports.get().size() << std::endl;
 
   return 0;
 }
