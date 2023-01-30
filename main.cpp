@@ -2,6 +2,7 @@
 #include <fstream>
 #include <iostream>
 #include <future>
+#include <ostream>
 #include <string>
 #include <unordered_map>
 #include <utility>
@@ -10,6 +11,7 @@
 #include "SafeInputStream/SafeInputStream.hpp"
 #include "Airline/Airline.hpp"
 #include "Helpers/StringHelpers.hpp"
+#include "Flight/Flight.hpp"
 
 
 
@@ -18,12 +20,15 @@ int main() {
   std::string airport_path = "../Data/airports.csv";
   std::string flights_path = "../Data/flights.csv";
 
+  std::future<std::vector<Flight>> f = std::async(std::launch::async, Flight::deserialize, flights_path);
+
   std::unordered_map<std::string, Airline> airlines = Airline::deserialize(airline_path);
   std::unordered_map<std::string, Airport> airports = Airport::deserialize(airport_path);
+  std::vector<Flight> flights = Flight::deserialize(flights_path);
 
-  for (auto& [k, v] : airports) {
-    std::cout << v << std::endl;
-  }
+  std::cout << "flights:" << f.get().size() << std::endl;
+  std::cout << "airlines:" << airlines.size() << std::endl;
+  std::cout << "airports:" << airports.size() << std::endl;
 
   return 0;
 }
