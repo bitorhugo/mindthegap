@@ -1,3 +1,0 @@
-/home/bitor/projects/mindthegap/cmake-build-debug/CMakeFiles/mindthegap.dir
-/home/bitor/projects/mindthegap/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/bitor/projects/mindthegap/cmake-build-debug/CMakeFiles/rebuild_cache.dir
